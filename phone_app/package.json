@@ -1,0 +1,16 @@
+{
+  "name": "mobile-app-frontend",
+  "version": "1.0.0",
+  "description": "简单手机APP前端",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": ["mobile", "app", "frontend", "backend"],
+  "author": "",
+  "license": "ISC"
+}

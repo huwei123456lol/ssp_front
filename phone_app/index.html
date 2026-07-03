@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>简单手机 APP 页面</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="title-group">
+        <h1>任务助手</h1>
+        <p>今日安排一览</p>
+      </div>
+      <button class="header-btn">+</button>
+    </header>
+
+    <main class="app-main">
+      <section class="card summary-card">
+        <h2>服务概览</h2>
+        <div class="summary-row">
+          <div>
+            <span class="summary-value" id="waitingCount">0</span>
+            <p>待办</p>
+          </div>
+          <div>
+            <span class="summary-value" id="pendingCount">0</span>
+            <p>进行中</p>
+          </div>
+          <div>
+            <span class="summary-value" id="doneCount">0</span>
+            <p>已完成</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card saas-card" id="accountCard">
+        <div class="card-header">
+          <h2>订阅方案</h2>
+          <span id="planStatus">加载中...</span>
+        </div>
+        <div class="plan-info">
+          <p class="plan-name" id="planName">免费版</p>
+          <p class="plan-detail" id="planDetail">每月最多 3 个任务</p>
+          <div class="plan-meta">
+            <span>续费日期：<strong id="renewDate">--</strong></span>
+            <span>状态：<strong id="renewStatus">--</strong></span>
+          </div>
+          <div class="feature-tags" id="featureTags">快速上手 · 团队协作 · 数据报表</div>
+        </div>
+      </section>
+
+      <section class="card list-card">
+        <div class="card-header">
+          <h2>今日任务</h2>
+          <span id="taskCount">0 条</span>
+        </div>
+        <ul class="task-list" id="taskList">
+          <li class="task-item">
+            <div>
+              <strong>整理客户资料</strong>
+              <p>在 16:00 前完成</p>
+            </div>
+            <span class="status done">已完成</span>
+          </li>
+          <li class="task-item">
+            <div>
+              <strong>外委合同审核</strong>
+              <p>与团队成员确认</p>
+            </div>
+            <span class="status pending">进行中</span>
+          </li>
+          <li class="task-item">
+            <div>
+              <strong>预约会议室</strong>
+              <p>14:30 会议</p>
+            </div>
+            <span class="status waiting">待办</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-btn active">首页</button>
+      <button class="nav-btn">任务</button>
+      <button class="nav-btn">我的</button>
+    </nav>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
